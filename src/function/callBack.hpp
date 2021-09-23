@@ -24,6 +24,8 @@ private:
 class Action
 {
 public:
+    Action() = default;
+    Action(const Action& ) = delete;
     void display(const std::string &str)
     {
         std::cout << "Action: "<<this <<"\tsignal: "<< str <<"\n";
